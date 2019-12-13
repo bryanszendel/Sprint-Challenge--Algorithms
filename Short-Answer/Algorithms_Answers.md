@@ -26,6 +26,6 @@ Assuming we will continue to go through each floor until we have thrown all of o
 
 If we reach the top of the building, we will take the elevator down and start over from floor 2. We will repeat the process all the way up and increment the starting floor each time. 
 
-at the end of the series, we will return the f with the lowest number of broken eggs
+at the end of the series, we will return the largest floor with the lowest number of broken eggs
 
 This type of algorithm contains a nested loop which would give us a Polynomial O(n^c) and the number of stories that we have would significantly affect the time complexity runtime of the looping.  
