@@ -96,8 +96,18 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        incrementer = 0
+        for i in range(0, len(self._list) - 1):
+            cur_index = i
+            cur_ind_value = self._list[i]
+            smallest_value = min(self._list[incrementer:])
+            smallest_index = self._list.index(smallest_value)
+            if cur_ind_value > smallest_value:
+                self._list[cur_index] = smallest_value # 0->1
+                self._list[smallest_index] = cur_ind_value # 2-> 4
+            incrementer += 1
+
+        return self._list
 
 
 if __name__ == "__main__":
