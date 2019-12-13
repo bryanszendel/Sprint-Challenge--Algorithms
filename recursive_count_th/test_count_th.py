@@ -30,7 +30,7 @@ class Test(unittest.TestCase):
     def test_count_th_mixedcase(self):
         self.word = "THtHThth"
         count = count_th(self.word)
-        self.assertEqual(1, count)
+        self.assertEqual(4, count) #assertion count was incorrect (was 1, now 4)
 
     
 if __name__ == '__main__':
